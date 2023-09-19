@@ -1,5 +1,5 @@
-import { UniqueEntityId } from '../../core/entities/unique-entity-id'
-import { Answer } from '../entities/answer'
+import { UniqueEntityId } from '../../../../core/entities/unique-entity-id'
+import { Answer } from '@/domain/forum/enterprise/entities/answer'
 import { AnswerRepository } from '../repositories/answer-repository'
 
 interface AnswerQuestionUseCaseRequest {
@@ -9,7 +9,7 @@ interface AnswerQuestionUseCaseRequest {
 }
 
 export class AnswerQuestionUseCase {
-  constructor(private answerRepository: AnswerRepository) {}
+  constructor(private answerRepository: AnswerRepository) { }
 
   async execute({
     instructorId,

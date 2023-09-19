@@ -1,9 +1,9 @@
 import { AnswerQuestionUseCase } from './answer-question'
+import { Answer } from '../../enterprise/entities/answer'
 import { AnswerRepository } from '../repositories/answer-repository'
-import { Answer } from '../entities/answer'
 
 const fakeAnswerRepository: AnswerRepository = {
-  create: async (answer: Answer) => {},
+  create: async (answer: Answer) => { },
 }
 
 test('create an answer', async () => {
